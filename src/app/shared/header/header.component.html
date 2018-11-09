@@ -1,0 +1,89 @@
+<div class="container-fluit">
+
+  <div class="navbar-fixed">
+    <div class="header">
+      <nav class="green">
+        <div class="container">
+          <div class="row">
+            <div class="col s2 hide-on-med-and-up">
+              <a href="#" id="btn-sidenav-demo">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <div class="col s10">
+              <a href="" class="brand-logo">AgroSoft</a>
+              <ul class="right hide-on-med-and-down right">
+                <li><a [routerLink]="['/home']">
+                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
+
+                    Inicio
+
+                  </a></li>
+                <li>
+                  <a routerLink="/graphics">
+                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'chart-line'" [size]="'24px'"></i>
+                    Estadísticas
+                  </a></li>
+                <li><a routerLink="/signin">
+                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'account-circle'" [size]="'24px'"></i>
+                    Usuario
+
+                  </a></li>
+
+                <li><a routerLink="/home">
+                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'logout'" [size]="'24px'"></i>
+                    Salir
+
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+  </div>
+
+  <mz-sidenav [id]="'sidenav-demo'" [collapseButtonId]="'btn-sidenav-demo'">
+    <mz-sidenav-header>
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="../../../assets/logo.png" alt="" class="circle">
+          <span class="title">Héctor Palmett</span>
+          <p> Admin </p>
+
+        </li>
+      </ul>
+    </mz-sidenav-header>
+    <mz-sidenav-divider></mz-sidenav-divider>
+    <mz-sidenav-link>
+      <a href="#">
+        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
+
+        Inicio</a>
+    </mz-sidenav-link>
+    <mz-sidenav-divider></mz-sidenav-divider>
+    <mz-sidenav-link>
+      <a href="#">
+
+        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'chart-line'" [size]="'24px'"></i>
+        Estadísticas
+      </a>
+    </mz-sidenav-link>
+    <mz-sidenav-divider></mz-sidenav-divider>
+    <mz-sidenav-link [active]="true">
+      <a href="#">
+        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'eye-outline'" [size]="'24px'"></i>
+        Mis Datos</a>
+    </mz-sidenav-link>
+
+    <mz-sidenav-divider></mz-sidenav-divider>
+    <mz-sidenav-link [active]="true">
+      <a href="#">
+        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'logout'" [size]="'24px'"></i>
+        Salir</a>
+    </mz-sidenav-link>
+
+  </mz-sidenav>
+</div>

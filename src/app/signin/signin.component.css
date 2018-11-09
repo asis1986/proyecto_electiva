@@ -1,0 +1,57 @@
+
+.container-fluit {
+  width: 90%;
+  margin-top: 35px;
+  margin-left: -13px;
+
+}
+
+.signin.form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.btn-signin {
+  background: #1d951b !important;
+  margin-top: 20px;
+  width: 150px !important;
+  font-family: 'Oleo Script';
+}
+
+.btn-signin:hover {
+  background: #17A589 !important;
+}
+
+.logo {
+  background: white;
+  text-align: center;
+  padding: 100px;
+  width: 100%;
+  height: 512px;
+}
+
+.title {
+  color: #1d951b;
+  font-family: 'Oleo Script';
+  font-size: 40px;
+  text-align: center;
+}
+
+.signin-form .description {
+  color: #7F8C8D;
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: 'Montserrat';
+}
+
+.login-box,
+.signin-box {
+  background-color: white;
+  border: 1px solid #edeeee !important;
+  border-radius: 7px 0px 7px 0px;
+  color: #7F8C8D;
+  margin: 0px auto;
+  padding: 10px;
+  text-align-last: center;
+  width: 100%;
+}
