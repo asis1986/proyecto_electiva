@@ -1,0 +1,26 @@
+/* Estilos para el formulario de contacto*/
+
+
+
+.container-contacts{
+  background: #fafafa;
+  border: 1px solid #edeeee !important;
+  border-radius: 7px 0px 7px 0px;
+  margin: 30px;
+  padding: 0px;
+  width: 85%;
+  
+
+}
+
+.title-contacts h1{
+  color:green;
+  font-size: 40px !important;
+  font-family: 'OleoScript';
+  text-align: center;
+}
+.btn-send{
+  font-family:'OleoScript';
+  margin-top: 25px;
+ 
+}

@@ -1,11 +1,8 @@
-
-
-
 <div class="container-fluit">
   <div class="row">
     <div class="col s12 push-s1">
       <div class="row">
-        <div class="col m7 hide-on-small-only logo">
+        <div class="col m7 hide-on-small-and-down logo">
 
           <img src="../../assets/logo2.png" class="img-responsive" alt="Image">
 
@@ -14,23 +11,18 @@
         <div class="col s12 m5">
           <div class="row">
             <div class="signin-box">
-              <h1 class="title">Ingresar Aquí</h1>
-              <form action="" class="signin-form">
-                <h2 class="description">
-                  Regístrate para que disfrutes de una aplicación
-                  que te ayudará a tomar buenas decisiones al momento de sembrar.
-
-                </h2>
+              <h1 class="title">Regístrat Aquí</h1>
+              <form ngNativeValidate [formGroup]="formulario_signup" (ngSubmit)="registrarUsuario()" class="signin-form">
+                <h2 class="description">Regístrate y disfruta de nuestros servicios</h2>
                 <div class="divider"></div>
 
                 <div class="section">
-                  <input type="text" name="" placeholder="Nombre">
-                  <input type="email" name="" placeholder="Apellido">
-                  <input type="text" name="" placeholder="Nombre de Usuario">
-                  <input type="email" name="" placeholder="Correo Electrónico">
-                  <input type="password" name="" placeholder="Contraseña">
+                  <input formControlName="correo" type="email" name="correo" placeholder="Correo Electrónico" required>
+                  <input formControlName="nombre_usuario" type="text" name="nombre_usuario" placeholder="Nombre de Usuario"
+                    required>
+                  <input formControlName="password" type="password" name="" placeholder="Contraseña">
 
-                  <button type="submit" class="btn waves-effect waves-light btn-large btn-signin">Regístrate</button>
+                  <button type="submit" class="btn waves-effect waves-light btn-large btn-signin">Ingresar</button>
                 </div>
               </form>
 
@@ -40,4 +32,27 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large pulse green">
+    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'menu'" [size]="'24px'"></i>
+  </a>
+  <ul>
+    <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" class="btn-floating red">
+<i class="prefix" mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
+    
+    </a></li>
+    <li><a [routerLink]="['/signin']" routerLinkActive="router-link-active" class="btn-floating yellow darken-1">
+<i  mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'login-variant'" [size]="'24px'"></i>
+    </a></li>
+    <li>
+      <a [routerLink]="['/contacts']" routerLinkActive="router-link-active" class="btn-floating blue">
+        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'contacts'" [size]="'24px'">
+
+        </i>
+      </a></li>
+
+  </ul>
 </div>

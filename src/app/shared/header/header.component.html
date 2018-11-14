@@ -13,7 +13,7 @@
             <div class="col s10">
               <a href="" class="brand-logo">AgroSoft</a>
               <ul class="right hide-on-med-and-down right">
-                <li><a [routerLink]="['/home']">
+                <li><a [routerLink]="['/homepage']">
                     <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
 
                     Inicio
@@ -32,9 +32,15 @@
 
                 <li><a routerLink="/home">
                     <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'logout'" [size]="'24px'"></i>
-                    Salir
+                   Cliente
 
                   </a></li>
+
+                  <li><a routerLink="/home">
+                      <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'logout'" [size]="'24px'"></i>
+                      Salir
+                  
+                    </a></li>
               </ul>
             </div>
           </div>
@@ -58,14 +64,14 @@
     </mz-sidenav-header>
     <mz-sidenav-divider></mz-sidenav-divider>
     <mz-sidenav-link>
-      <a href="#">
+      <a [routerLink]="['/homrpage']" routerLinkActive="router-link-active" >
         <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
 
         Inicio</a>
     </mz-sidenav-link>
     <mz-sidenav-divider></mz-sidenav-divider>
     <mz-sidenav-link>
-      <a href="#">
+<a [routerLink]="['/graphics']" routerLinkActive="router-link-active">
 
         <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'chart-line'" [size]="'24px'"></i>
         Estadísticas
@@ -80,7 +86,7 @@
 
     <mz-sidenav-divider></mz-sidenav-divider>
     <mz-sidenav-link [active]="true">
-      <a href="#">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" >
         <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'logout'" [size]="'24px'"></i>
         Salir</a>
     </mz-sidenav-link>

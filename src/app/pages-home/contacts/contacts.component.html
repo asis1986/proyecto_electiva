@@ -1,3 +1,72 @@
-<p>
-  contacts works!
-</p>
+<div class="container-contacts">
+  <div class="row">
+    <div class="col s10 push-s1 m6 offset-m3">
+
+      <div class="title-contacts">
+        <h1>En este formulario puedes enviarnos tus inquietudes</h1>
+      </div>
+      <div class="divider"></div>
+      <form>
+
+
+        <div class="section">
+          <div class="input-field col s12">
+            <i class="prefix" mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'account-arrow-right-outline'" [size]="'24px'"></i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Nombre Completo:</label>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="prefix" mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'email'" [size]="'24px'"></i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Correo Electrónico:</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="prefix" mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'phone'" [size]="'24px'"></i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Telefono de contacto:</label>
+          </div>
+
+          <div class="input-field col s12">
+            <textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+            <label class="txtarea" for="autocomplete-input"> Escribe Tu mensaje: </label>
+          </div>
+
+
+
+          <button class="btn waves-effect waves-light green btn-send " type="submit" name="action">Enviar
+
+          </button>
+
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class=" col s12 push-s1 m6 offset-m3">
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large pulse green">
+        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'menu'" [size]="'24px'"></i>
+      </a>
+      <ul>
+        <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" class="btn-floating red">
+            <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
+          </a></li>
+        <li><a [routerLink]="['/signup']" routerLinkActive="router-link-active" class="btn-floating yellow darken-1">
+            <i class="prefix" mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'account-arrow-right-outline'" [size]="'24px'"></i></a></li>
+        <li>
+          <a [routerLink]="['/signin']" routerLinkActive="router-link-active" class="btn-floating blue">
+            <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'login-variant'" [size]="'24px'">
+
+            </i>
+          </a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>

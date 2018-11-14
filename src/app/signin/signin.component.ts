@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-signin",
@@ -6,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ["./signin.component.css"]
 })
 export class SigninComponent implements OnInit {
+  formulario_signin: FormGroup;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.formulario_signin = new FormGroup({
+      correo: new FormControl(null, [Validators.required, Validators.email]),
+      password: new FormControl(null, Validators.required)
+    });
+  }
+
+  loginUser(){
+    console.log(this.formulario_signin.value);
+  }
 }

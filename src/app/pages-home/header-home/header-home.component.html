@@ -1,94 +1,98 @@
-
-
 <div class="header">
-<div class="container-fluit">
+  <div class="container-fluit">
 
-  <div class="navbar-fixed">
-    <div class="header">
-      <nav class="green">
-        <div class="container">
-          <div class="row">
-            <div class="col s2 hide-on-med-and-up">
-              <a href="#" id="btn-sidenav-demo">
-                <i class="material-icons">menu</i>
-              </a>
-            </div>
-            <div class="col s10">
-              <a href="" class="brand-logo">AgroSoft</a>
-              <ul class="right hide-on-med-and-down right">
-                <li><a [routerLink]="['/home']">
-                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
+    <div class="navbar-fixed">
+      <div class="header">
+        <nav class="green">
+          <div class="container">
+            <div class="row">
+              <div class="col s2 hide-on-med-and-up">
+                <a href="#" id="btn-sidenav-demo">
+                  <i class="prefix" mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'menu'" [size]="'24px'"></i>
+                </a>
+              </div>
+              <div class="col s10">
+                <a href="" class="brand-logo">ISOLID</a>
+                <ul class="right hide-on-med-and-down right">
+                  <li><a [routerLink]="['/home']">
+                      <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
 
-                    Inicio
+                      Inicio
 
-                  </a></li>
-                <li>
-                  <a [routerLink]="['/home']" routerLinkActive="active" >
-                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'account-arrow-right-outline'" [size]="'24px'"></i>
-                    Regístrarse
-                  </a></li>
-                <li><a routerLink="/signin">
-                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'login-variant'" [size]="'24px'"></i>
-                    Ingresar 
+                    </a></li>
+                  <li>
+                    <a [routerLink]="['/signup']" routerLinkActive="active">
+                      <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'account-arrow-right-outline'" [size]="'24px'"></i>
+                      Regístrarse
+                    </a></li>
+                  <li><a routerLink="/signin">
+                      <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'login-variant'" [size]="'24px'"></i>
+                      Ingresar
 
-                  </a></li>
+                    </a></li>
 
-                <li><a routerLink="/signin">
-                    <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'contacts'" [size]="'24px'"></i>
-                   Contacto
-                  </a></li>
-              </ul>
+                  <div class="fixed-action-btn">
+                    Contactanos:
+                    <a class="btn-floating btn-large pulse light-green ">
+                      <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'contacts'" [size]="'24px'"></i>
+                    </a>
+                    <ul>
+                      <li><a [routerLink]="['/contacts']" routerLinkActive="router-link-active" class="btn-floating red">
+                          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'email'" [size]="'24px'"></i>
+                        </a></li>
+                      <li><a class="btn-floating yellow darken-1">
+                          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'phone'" [size]="'24px'"></i>
+                        </a></li>
+                      <li><a class="btn-floating dark-green ">
+                          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'whatsapp'" [size]="'24px'"></i>
+                        </a></li>
+                      <li><a class="btn-floating blue">
+                          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'facebook'" [size]="'24px'"></i>
+                        </a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
+
+
     </div>
 
+    <mz-sidenav [id]="'sidenav-demo'" [collapseButtonId]="'btn-sidenav-demo'">
 
+      <mz-sidenav-link>
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active">
+          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
+
+          Inicio</a>
+      </mz-sidenav-link>
+      <mz-sidenav-divider></mz-sidenav-divider>
+      <mz-sidenav-link>
+        <a [routerLink]="['/signup']" routerLinkActive="router-link-active">
+
+          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'account-arrow-right-outline'" [size]="'24px'"></i>
+          Regístrate
+        </a>
+      </mz-sidenav-link>
+      <mz-sidenav-divider></mz-sidenav-divider>
+      <mz-sidenav-link [active]="true">
+        <a [routerLink]="['/signin']" routerLinkActive="router-link-active">
+          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'login-variant'" [size]="'24px'"></i>
+          Ingresar</a>
+      </mz-sidenav-link>
+
+      <mz-sidenav-divider></mz-sidenav-divider>
+      <mz-sidenav-link [active]="true">
+        <a [routerLink]="['/contacts']" routerLinkActive="router-link-active" >
+          <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'contacts'" [size]="'24px'"></i>
+          Contactanos</a>
+      </mz-sidenav-link>
+
+    </mz-sidenav>
   </div>
-
-  <mz-sidenav [id]="'sidenav-demo'" [collapseButtonId]="'btn-sidenav-demo'">
-    <mz-sidenav-header>
-      <ul class="collection">
-        <li class="collection-item avatar">
-          <img src="../../../assets/logo.png" alt="" class="circle">
-          <span class="title">Héctor Palmett</span>
-          <p> Admin </p>
-
-        </li>
-      </ul>
-    </mz-sidenav-header>
-    <mz-sidenav-divider></mz-sidenav-divider>
-    <mz-sidenav-link>
-      <a href="#">
-        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'home-outline'" [size]="'24px'"></i>
-
-        Inicio</a>
-    </mz-sidenav-link>
-    <mz-sidenav-divider></mz-sidenav-divider>
-    <mz-sidenav-link>
-      <a href="#">
-
-        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'chart-line'" [size]="'24px'"></i>
-        Estadísticas
-      </a>
-    </mz-sidenav-link>
-    <mz-sidenav-divider></mz-sidenav-divider>
-    <mz-sidenav-link [active]="true">
-      <a href="#">
-        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'eye-outline'" [size]="'24px'"></i>
-        Mis Datos</a>
-    </mz-sidenav-link>
-
-    <mz-sidenav-divider></mz-sidenav-divider>
-    <mz-sidenav-link [active]="true">
-      <a href="#">
-        <i mz-icon-mdi [align]="'left'" [flip]="'h'" [icon]="'logout'" [size]="'24px'"></i>
-        Salir</a>
-    </mz-sidenav-link>
-
-  </mz-sidenav>
-</div>
 
 
 </div>
