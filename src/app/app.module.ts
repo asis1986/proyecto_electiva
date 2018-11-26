@@ -19,6 +19,9 @@ import { AdminComponent } from "./pages/admin/admin.component";
 
 //rutas principales
 import { appRouting } from "./app.routes";
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 
@@ -33,6 +36,8 @@ import { appRouting } from "./app.routes";
     RecoverPasswordComponent,
     AdminComponent
     
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,8 @@ import { appRouting } from "./app.routes";
     appRouting,
     PagesHomeModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

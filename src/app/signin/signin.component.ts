@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-
+import   swal from 'sweetalert';
 @Component({
   selector: "app-signin",
   templateUrl: "./signin.component.html",
@@ -18,6 +18,7 @@ export class SigninComponent implements OnInit {
   }
 
   loginUser(){
-    console.log(this.formulario_signin.value);
+  
+    swal("OK","Regístro Exítoso", "success");
   }
 }

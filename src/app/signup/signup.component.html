@@ -4,22 +4,27 @@
       <div class="row">
         <div class="col m7 hide-on-small-and-down logo">
 
-          <img src="../../assets/logo2.png" class="img-responsive" alt="Image">
+          <img src="../../assets/logotipo2.png" class="img-responsive" alt="Image">
 
         </div>
 
         <div class="col s12 m5">
           <div class="row">
             <div class="signin-box">
-              <h1 class="title">Regístrat Aquí</h1>
+              <h1 class="title">Regístrate Aquí</h1>
               <form ngNativeValidate [formGroup]="formulario_signup" (ngSubmit)="registrarUsuario()" class="signin-form">
                 <h2 class="description">Regístrate y disfruta de nuestros servicios</h2>
                 <div class="divider"></div>
 
                 <div class="section">
+                  <input formControlName="cedula" type="text" name="cedula" placeholder="Número de cocumento" required>
+                  <input formControlName="primer_nombre" type="text" name="nombre1" placeholder="Primer Nombre" required>
+                  <input formControlName="segundo_nombre" type="text" name="nombre2" placeholder="Segundo Nombre:" >
+                  
+                  <input formControlName="primer_apellido" type="text" name="apellido1" placeholder="Primer Apellido" required>
+                  <input formControlName="segundo_apellido" type="text" name="apellido2" placeholder="Segundo Apellido">
+                  <input formControlName="telefono" type="text" name="telefono" placeholder="Numero de Contacto">
                   <input formControlName="correo" type="email" name="correo" placeholder="Correo Electrónico" required>
-                  <input formControlName="nombre_usuario" type="text" name="nombre_usuario" placeholder="Nombre de Usuario"
-                    required>
                   <input formControlName="password" type="password" name="" placeholder="Contraseña">
 
                   <button type="submit" class="btn waves-effect waves-light btn-large btn-signin">Ingresar</button>

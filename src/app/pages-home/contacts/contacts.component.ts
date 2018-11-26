@@ -13,4 +13,8 @@ export class ContactsComponent implements OnInit {
     
   }
 
+
+  telefono(){
+    console.log('Telefono');
+  }
 }

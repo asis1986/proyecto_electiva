@@ -7,6 +7,7 @@ import { NgModule } from "@angular/core";
 import { HomepageComponent } from "./homepage/homepage.component";
 import { GraphicsComponent } from "./graphics/graphics.component";
 import { PagesComponent } from "./pages.component";
+import { ProductsComponent } from './products/products.component';
 //import { ChartsModule } from "ng2-charts";
 import { SharedModule } from "../shared/shared.module";
 import { PAGES_ROUTES } from "./pages.routes";
@@ -15,15 +16,15 @@ import { PAGES_ROUTES } from "./pages.routes";
 //componentes
 
 @NgModule({
-  declarations: [HomepageComponent, GraphicsComponent, PagesComponent],
+  declarations: [HomepageComponent, GraphicsComponent, PagesComponent, ProductsComponent],
   exports: [
     HomepageComponent,
     GraphicsComponent,
     PagesComponent,
+    ProductsComponent
     //ChartsModule
-   
   ],
 
-  imports: [SharedModule,PAGES_ROUTES]
+  imports: [SharedModule, PAGES_ROUTES]
 })
 export class PagesModule {}
